@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 const App = () => {
   return (
-    <Router>
+    <Router basename='chat-app'>
       <Routes>
       <Route path="/" exact Component={Join} />
       <Route path="/chat" Component={Chat} />
